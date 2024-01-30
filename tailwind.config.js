@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./pages/**/*.{html,js}"],
   theme: {
-    extend: {},
+    screens: {
+      xlarge: "1100px",
+    },
+    extend: {
+      backgroundColor: {
+        primary: "#007539",
+      },
+    },
   },
   plugins: [],
 };
