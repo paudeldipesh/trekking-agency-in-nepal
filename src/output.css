@@ -544,39 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-<<<<<<< HEAD
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.-top-4 {
-  top: -1rem;
-}
-
-.m-auto {
-  margin: auto;
-}
-
-.h-\[90px\] {
-  height: 90px;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-=======
 .float-left {
   float: left;
 }
@@ -661,5 +628,4 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
->>>>>>> 8badd92cfa7b380cc53a60343e0733ff73226aa6
 }
