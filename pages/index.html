@@ -5,30 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../src/output.css" />
     <title>Document</title>
   </head>
   <body style="font-family: 'Roboto', sans-serif">
     <!-- Header Section -->
-    <header class="overflow-hidden bg-[#007539]">
-      
-        <a href="#" class="text-white float-left gap-2 text-center p-1"
-          >⭑ allnepalexcursion@gmail.com</a
+    <header class="flex justify-around h-12 items-center bg-[#007539]">
+      <div class="flex gap-5 items-center">
+        <a
+          href="mailto:allnepalexcursion@gmail.com"
+          class="text-white float-left gap-2 text-center p-1"
+          ><li class="fa fa-envelope"></li>
+          allnepalexcursion@gmail.com</a
         >
-        <a href="#" class="text-white float-left text-center p-1"
-          >⭑ +977-985114150 (Whatsapp / Viber)</a
+        <a
+          href="tel:+977-985114150"
+          class="text-white float-left text-center p-1"
+          ><li class="fab fa-whatsapp"></li>
+          +977-985114150 (Whatsapp / Viber)</a
         >
-
-        <a href="#" class="text-white float-right text-center ml-2 p-1">⭑</a>
-        <a href="#" class="text-white float-right text-center ml-2 p-1">⭑</a>
-        <a href="#" class="text-white float-right text-center ml-2 p-1">⭑</a>
-      
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/allnepalexcursiontreks"
+          target="_blank"
+          class="text-white p-1 ml-2 text-xl"
+          ><li class="fab fa-facebook-square"></li
+        ></a>
+        <a href="#" class="text-white p-1 ml-2 text-xl"
+          ><li class="fab fa-twitter-square"></li
+        ></a>
+        <a href="#" class="text-white p-1 ml-2 text-xl"
+          ><li class="fab fa-youtube-square"></li
+        ></a>
+      </div>
     </header>
-    <!-- End Header Section -->
     <!-- Navbar Section -->
     <div>
       <nav class="h-[90px] w-[80%] m-auto flex justify-between items-center">
@@ -56,18 +80,22 @@
         </div>
       </nav>
     </div>
-
+    <!-- Hero Section -->
     <div
-      class="w-full h-[29rem]"
+      class="w-full h-[29rem] flex justify-center items-center"
       style="
-        background: url('https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg?w=2000&t=st=1706593092~exp=1706593692~hmac=c4c75a6c4ee28d13455add292b54684b15c7488d096d992020f0f91c83551b17');
+        background: url('	https://trekkingagencyinnepal.com/wp-content/uploads/2022/07/Boudhanath-1-1366x520.jpg');
       "
     >
-      <div class="flex h-[100%] justify-center">
-        <div
-          class="flex justify-center items-center text-white text-6xl font-bold drop-shadow-lg"
-        >
-          Hello, World
+      <div class="text-white font-bold drop-shadow-lg">
+        <h1 class="text-3xl font-bold text-center">BOUDHANATH STUPA</h1>
+        <h2 class="text-xl text-center">
+          Situated On The Heart Of Beautiful Buddhist Stupa.
+        </h2>
+        <div class="text-center mt-3">
+          <button class="bg-red-500 rounded-3xl py-3 px-5 capitalize">
+            view more
+          </button>
         </div>
       </div>
     </div>
