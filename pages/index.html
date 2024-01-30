@@ -20,20 +20,25 @@
     />
     <link rel="stylesheet" href="../css/output.css" />
     <title>Document</title>
+    <style>
+      .group:hover .sub-nav-item {
+        display: block;
+      }
+    </style>
   </head>
   <body style="font-family: 'Roboto', sans-serif">
     <!-- Header Section -->
-    <header class="flex justify-around h-12 items-center bg-primary">
-      <div class="flex gap-5 items-center">
+    <header
+      class="flex flex-col small:flex-row justify-around mb:h-[80px] large:h-12 items-center bg-primary"
+    >
+      <div class="flex flex-col tab:flex-row gap-1 md:gap-5 items-center">
         <a
           href="mailto:allnepalexcursion@gmail.com"
-          class="text-white float-left gap-2 text-center p-1"
+          class="text-white gap-2 text-center p-1"
           ><li class="fa fa-envelope"></li>
           allnepalexcursion@gmail.com</a
         >
-        <a
-          href="tel:+977-985114150"
-          class="text-white float-left text-center p-1"
+        <a href="tel:+977-985114150" class="text-white text-center p-1"
           ><li class="fab fa-whatsapp"></li>
           +977-9851141500 (Whatsapp / Viber)</a
         >
@@ -53,21 +58,97 @@
         ></a>
       </div>
     </header>
-    <!-- Navbar Section -->
-    <div>
-      <nav class="h-[90px] w-[80%] m-auto flex justify-between items-center">
+
+    <!-- Big Screen Navbar Section -->
+    <div class="bg-white z-10 sticky top-0 hidden large:block">
+      <nav
+        class="h-[60px] large:h-[90px] w-[80%] m-auto flex justify-between items-center"
+      >
         <a href="index.html"
           ><img
-            class="h-20"
+            class="h-12 large:h-20"
             src="	https://trekkingagencyinnepal.com/wp-content/uploads/2023/07/cropped-Untitled-1-1.png"
             alt="logo"
         /></a>
-        <ul class="flex gap-5 font-bold text-lg">
+        <ul class="gap-5 font-bold text-lg large:flex hidden">
           <a href="index.html"><li class="cursor-pointer">Home</li></a>
-          <a href="#"><li class="cursor-pointer">Trekking</li></a>
-          <a href="#"><li class="cursor-pointer">Climbing</li></a>
-          <a href="#"><li class="cursor-pointer">Tour</li></a>
-          <a href="#"><li class="cursor-pointer">Helicopter</li></a>
+          <div class="group relative">
+            <a href="#" class="group"
+              ><li class="group">
+                Trekking <i class="fa-solid fa-sort-down"></i>
+              </li>
+            </a>
+            <ul class="hidden sub-nav-item absolute top-0">
+              <li>sub nav item 1</li>
+              <li>sub nav item 2</li>
+              <li>sub nav item 3</li>
+            </ul>
+          </div>
+          <div class="group">
+            <a href="#" class="group"
+              ><li class="group">
+                Climbing <i class="fa-solid fa-sort-down"></i></li
+            ></a>
+            <ul class="hidden sub-nav-item">
+              <li>sub nav item 1</li>
+              <li>sub nav item 2</li>
+              <li>sub nav item 3</li>
+            </ul>
+          </div>
+          <a href="#"
+            ><li class="cursor-pointer">
+              Tour <i class="fa-solid fa-sort-down"></i></li
+          ></a>
+          <a href="#"
+            ><li class="cursor-pointer">
+              Helicopter Tour <i class="fa-solid fa-sort-down"></i></li
+          ></a>
+          <a href="#"><li class="cursor-pointer">About Us</li></a>
+          <a href="#"><li class="cursor-pointer">Blog</li></a>
+        </ul>
+        <div class="pc:block hidden">
+          <input
+            class="p-2 rounded border border-gray-400 focus:outline-none w-[250px]"
+            type="search"
+            placeholder="Search"
+          />
+        </div>
+        <button class="large:hidden block">
+          <i class="fa fa-bars text-2xl"></i>
+        </button>
+      </nav>
+    </div>
+    <!-- Big Screen Navbar Section -->
+
+    <!-- Mobile Screen Navbar Section -->
+    <div class="bg-white z-10 sticky top-0 block large:hidden">
+      <nav
+        class="h-[60px] large:h-[90px] w-[80%] m-auto flex justify-between items-center"
+      >
+        <a href="index.html"
+          ><img
+            class="h-12 large:h-20"
+            src="	https://trekkingagencyinnepal.com/wp-content/uploads/2023/07/cropped-Untitled-1-1.png"
+            alt="logo"
+        /></a>
+        <ul class="gap-5 font-bold text-lg large:flex hidden">
+          <a href="index.html"><li class="cursor-pointer">Home</li></a>
+          <a href="#"
+            ><li class="cursor-pointer">
+              Trekking <i class="fa-solid fa-sort-down"></i></li
+          ></a>
+          <a href="#"
+            ><li class="cursor-pointer">
+              Climbing <i class="fa-solid fa-sort-down"></i></li
+          ></a>
+          <a href="#"
+            ><li class="cursor-pointer">
+              Tour <i class="fa-solid fa-sort-down"></i></li
+          ></a>
+          <a href="#"
+            ><li class="cursor-pointer">
+              Helicopter Tour <i class="fa-solid fa-sort-down"></i></li
+          ></a>
           <a href="#"><li class="cursor-pointer">About Us</li></a>
           <a href="#"><li class="cursor-pointer">Blog</li></a>
         </ul>
@@ -78,8 +159,13 @@
             placeholder="Search"
           />
         </div>
+        <button class="large:hidden block">
+          <i class="fa fa-bars text-2xl"></i>
+        </button>
       </nav>
     </div>
+    <!-- Mobile Screen Navbar Section -->
+
     <!-- Hero Section -->
     <div
       class="w-full h-[29rem] flex justify-start items-center"
@@ -90,11 +176,13 @@
     >
       <div class="text-white font-bold drop-shadow-lg w-[80%] m-auto">
         <h1
-          class="text-5xl font-bold text-left bg-gradient-to-r from-blue-500 via-red-500 to-green-500 text-transparent bg-clip-text"
+          class="font-extrabold text-2xl large:text-4xl text-left bg-gradient-to-r from-blue-500 via-red-500 to-green-500 text-transparent bg-clip-text"
         >
           BOUDHANATH STUPA
         </h1>
-        <h2 class="text-xl text-gray-700">
+        <h2
+          class="text-base small:text-xl large:text-2xl text-gray-700 text-shadow-md"
+        >
           Situated On The Heart Of Beautiful Buddhist Stupa.
         </h2>
         <div class="mt-3">
@@ -106,5 +194,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/script.js"></script>
   </body>
 </html>

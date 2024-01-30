@@ -3,7 +3,12 @@ module.exports = {
   content: ["./pages/**/*.{html,js}"],
   theme: {
     screens: {
-      xlarge: "1100px",
+      xlarge: "1160px",
+      large: "900px",
+      small: "440px",
+      pc: "1280px",
+      tab: "768px",
+      mb: "480px",
     },
     extend: {
       backgroundColor: {
