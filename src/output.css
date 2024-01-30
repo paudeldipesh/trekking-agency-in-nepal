@@ -669,6 +669,10 @@ video {
   height: 10rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
