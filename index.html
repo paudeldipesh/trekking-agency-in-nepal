@@ -18,8 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/output.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Trekking Archives - All Nepal Excursion</title>
     <style>
       .group:hover .sub-nav-item {
         display: block;
@@ -62,6 +62,7 @@
         ></a>
       </div>
     </header>
+    <!-- Header Section -->
 
     <!-- Big Screen Navbar Section -->
     <div class="bg-white z-10 sticky top-0 hidden large:block">
@@ -473,9 +474,6 @@
             placeholder="Search"
           />
         </div>
-        <button class="large:hidden block">
-          <i class="fa fa-bars text-2xl"></i>
-        </button>
       </nav>
     </div>
     <!-- Big Screen Navbar Section -->
@@ -491,39 +489,366 @@
             src="	https://trekkingagencyinnepal.com/wp-content/uploads/2023/07/cropped-Untitled-1-1.png"
             alt="logo"
         /></a>
-        <ul class="gap-5 font-bold text-lg large:flex hidden">
-          <a href="index.html"><li class="cursor-pointer p-[2px]">Home</li></a>
-          <a href="#"
-            ><li class="cursor-pointer">
-              Trekking <i class="fa-solid fa-sort-down"></i></li
-          ></a>
-          <a href="#"
-            ><li class="cursor-pointer">
-              Climbing <i class="fa-solid fa-sort-down"></i></li
-          ></a>
-          <a href="#"
-            ><li class="cursor-pointer">
-              Tour <i class="fa-solid fa-sort-down"></i></li
-          ></a>
-          <a href="#"
-            ><li class="cursor-pointer">
-              Helicopter Tour
-              <i class="fa-solid fa-sort-down"></i></li
-          ></a>
-          <a href="#"><li class="cursor-pointer">About Us</li></a>
-          <a href="#"><li class="cursor-pointer">Blog</li></a>
-        </ul>
-        <div class="xlarge:block hidden">
-          <input
-            class="p-2 rounded border border-gray-400 focus:outline-none w-[250px]"
-            type="search"
-            placeholder="Search"
-          />
-        </div>
-        <button class="large:hidden block">
+
+        <button class="large:hidden block" id="bar-icon">
           <i class="fa fa-bars text-2xl"></i>
         </button>
       </nav>
+
+      <ul id="nav-items" class="gap-12 text-slate-600 hidden">
+        <li
+          class="cursor-pointer border-b border-gray-300 capitalize p-2 font-normal"
+        >
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <div
+            class="p-2 border-b border-gray-300 flex justify-between gap-2 trekking"
+          >
+            Trekking <i class="fa-solid fa-sort-down"></i>
+          </div>
+          <ul class="hidden sub-trekking text-base bg-white sub-nav-item p-1">
+            <div class="w-full">
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                manaslu region
+                <i class="fa-solid fa-sort-down"></i>
+              </li>
+
+              <ul
+                class="hidden sub-manaslu overflow-hidden bg-white shadow-md sub-nav"
+              >
+                <div class="p-2">
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      Around Manaslu Trekking
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      Manaslu Base Camp Trekking
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">Tsum Valley Trek </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+                  >
+                    <a href="#" class="cursor-pointer">Nar Phu Valley Trek </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+
+            <div class="w-full">
+              <li
+                class="border-b everest border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                everest region
+                <i class="fa-solid fa-sort-down"></i>
+              </li>
+
+              <ul
+                class="hidden sub-everest overflow-hidden bg-white shadow-md sub-nav"
+              >
+                <div class="p-2">
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      everest base camp trek
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      everest three high passes trek
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      everest panorama trekking</a
+                    >
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+                  >
+                    <a href="#" class="cursor-pointer">gokyo lake trek</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+
+            <div class="w-full">
+              <li
+                class="border-b annapurna border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                annapurna region
+                <i class="fa-solid fa-sort-down"></i>
+              </li>
+
+              <ul
+                class="hidden sub-annapurna overflow-hidden bg-white shadow-md sub-nav"
+              >
+                <div class="p-2">
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer"
+                      >Annapurna Base Camp Trek
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      Annapurna Circuit(Round) Trek
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer"> Khumai Danda Trek</a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+                  >
+                    <a href="#" class="cursor-pointer">Mardi Himal Trek</a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+                  >
+                    <a href="#" class="cursor-pointer"
+                      >Gorepani Phoonhill Trek</a
+                    >
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+                  >
+                    <a href="#" class="cursor-pointer">Khorpa Ridge Trekking</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+
+            <div class="w-full">
+              <li
+                class="border-b langtang border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                langtang region
+                <i class="fa-solid fa-sort-down"></i>
+              </li>
+
+              <ul
+                class="hidden sub-langtang overflow-hidden bg-white shadow-md sub-nav"
+              >
+                <div class="p-2">
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">langtang valley trek </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      langtang helambu trek
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+
+            <div class="w-full">
+              <li
+                class="border-b dolpa border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                dolpa
+                <i class="fa-solid fa-sort-down"></i>
+              </li>
+
+              <ul
+                class="hidden sub-dolpa overflow-hidden bg-white shadow-md sub-nav"
+              >
+                <div class="p-2">
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">upper dolpa trek</a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer">
+                      lower dolpa trekking
+                    </a>
+                  </li>
+
+                  <li
+                    class="border-b border-gray-300 capitalize p-2 font-normal"
+                  >
+                    <a href="#" class="cursor-pointer"> upper mustang trek </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+
+            <a href="#"
+              ><li
+                class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                holy gosainkunda trek
+              </li></a
+            >
+
+            <a href="#"
+              ><li
+                class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                rara lake trekking
+              </li></a
+            >
+
+            <a href="#"
+              ><li
+                class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                kanchenjunga base camp trek
+              </li></a
+            >
+
+            <a href="#"
+              ><li
+                class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                makalu base camp trek
+              </li></a
+            >
+
+            <a href="#"
+              ><li
+                class="border-b border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                royal trek
+              </li></a
+            >
+          </ul>
+        </li>
+
+        <li>
+          <div
+            class="p-2 border-b border-gray-300 flex justify-between gap-2 climbing"
+          >
+            Climbing <i class="fa-solid fa-sort-down"></i>
+          </div>
+          <ul class="hidden sub-climbing text-base bg-white sub-nav-item p-1">
+            <div class="w-full">
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                mt. everest expedition
+              </li>
+
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                island peak climbing
+              </li>
+
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                lobouche peak climbing
+              </li>
+            </div>
+          </ul>
+        </li>
+
+        <li>
+          <div
+            class="p-2 border-b border-gray-300 flex justify-between gap-2 tour"
+          >
+            Tour <i class="fa-solid fa-sort-down"></i>
+          </div>
+          <ul class="hidden sub-tour text-base bg-white sub-nav-item p-1">
+            <div class="w-full">
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                kathmandu valley tour
+              </li>
+
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                the golden triangle tour
+              </li>
+
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                kathmandu heritage tour
+              </li>
+            </div>
+          </ul>
+        </li>
+
+        <li>
+          <div
+            class="p-2 border-b border-gray-300 flex justify-between gap-2 helicopter"
+          >
+            Helicopter Tour <i class="fa-solid fa-sort-down"></i>
+          </div>
+          <ul class="hidden sub-helicopter text-base bg-white sub-nav-item p-1">
+            <div class="w-full">
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                everest base camp helicopter tour
+              </li>
+
+              <li
+                class="border-b manaslu border-gray-300 capitalize p-2 font-normal flex justify-between"
+              >
+                gosainkunda helicopter tour
+              </li>
+            </div>
+          </ul>
+        </li>
+
+        <li class="cursor-pointer p-2 border-b border-gray-300">
+          <a href="#">About Us</a>
+        </li>
+
+        <li class="cursor-pointer p-2 border-b border-gray-300">
+          <a href="#">Blog</a>
+        </li>
+      </ul>
     </div>
     <!-- Mobile Screen Navbar Section -->
 
@@ -555,6 +880,7 @@
         </div>
       </div>
     </div>
-    <script src="../js/script.js"></script>
+    <!-- Hero Section -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
