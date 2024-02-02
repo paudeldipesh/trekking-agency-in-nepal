@@ -1,0 +1,101 @@
+#itenirary {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+#inclusions {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+.header {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+.image {
+    display: flex;
+    flex-basis: 75%; /* Occupy 75% of the available width */
+}
+
+.info {
+    flex-basis: 25%; /* Occupy 25% of the available width */
+    display: flex;
+    flex-direction: column;
+}
+
+.details,
+.contact {
+    margin-bottom: 20px;
+}
+
+.active {
+    color: #3DC47E;
+}
+
+.inclusion p {
+    display: flex;
+    align-items: center;
+}
+
+.exclusion p {
+    display: flex;
+    align-items: center;
+}
+
+.inclusion p::before {
+    content: "\f00c"; /* Unicode for Font Awesome check icon */
+    font-family: "Font Awesome 5 Free"; /* Font family for Font Awesome */
+    font-weight: 900; /* Required for correct display of the icon */
+    margin-right: 10px;
+    color: rgb(95, 240, 95);
+}
+
+.exclusion p::before {
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: rgb(226, 86, 86);
+}
+
+.inclusion p span {
+    text-indent: -3px; 
+    padding-left: 2px; 
+}
+
+.exclusion p span {
+    text-indent: -3px; 
+    padding-left: 3px; 
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+    transition-timing-function: linear;
+  }
+
+  .answer.show {
+    max-height: 1000px;
+    transition: 2s;
+    transition-timing-function: linear;
+  }
+
+  .swiper-container {
+    width: 100vh;
+    height: 600px;
+    overflow: hidden;
+  }
+
