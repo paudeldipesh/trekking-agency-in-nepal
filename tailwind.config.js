@@ -9,10 +9,16 @@ module.exports = {
       pc: "1280px",
       tab: "768px",
       mb: "480px",
+      mb: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
     extend: {
-      backgroundColor: {
+      colors: {
         primary: "#007539",
+        secondary: "#456cb1",
       },
     },
   },
