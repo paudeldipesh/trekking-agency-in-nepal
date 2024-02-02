@@ -1,12 +1,5 @@
-const hamburgerIcon = document.getElementById("bar-icon");
-const mobileNavbar = document.getElementById("nav-items");
-
-hamburgerIcon.addEventListener("click", () => {
-  if (mobileNavbar.style.display !== "block") {
-    mobileNavbar.style.display = "block";
-  } else {
-    mobileNavbar.style.display = "none";
-  }
+document.getElementById("bar-icon").addEventListener("click", () => {
+  document.getElementById("nav-items").classList.toggle("hidden");
 });
 
 document.querySelector(".trekking").addEventListener("click", () => {
