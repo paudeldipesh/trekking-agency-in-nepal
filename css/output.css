@@ -882,6 +882,14 @@ video {
   height: 60px;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
 .w-\[10\%\] {
   width: 10%;
 }
@@ -2350,6 +2358,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 117 57 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2854,10 +2867,6 @@ video {
 
   .large\:h-\[90px\] {
     height: 90px;
-  }
-
-  .large\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .large\:text-2xl {
