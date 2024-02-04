@@ -2,9 +2,11 @@ document.getElementById("bar-icon").addEventListener("click", () => {
   document.getElementById("nav-items").classList.toggle("hidden");
 });
 
-document.querySelector(".trekking").addEventListener("click", () => {
-  document.querySelector(".sub-trekking").classList.toggle("hidden");
-});
+document
+  .querySelector(".parent-element")
+  .addEventListener("click", (element) => {
+    element.currentTarget.nextElementSibling.classList.toggle("hidden");
+  });
 
 document.querySelector(".manaslu").addEventListener("click", () => {
   document.querySelector(".sub-manaslu").classList.toggle("hidden");
