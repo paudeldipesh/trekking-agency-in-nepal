@@ -30,12 +30,17 @@ function toggleFaq(faqId) {
     var arrowElement = faqElement.querySelector('.arrow');
     arrowElement.classList.toggle("up");
 
-    console.log("arrow" + (arrowElement.classList.contains("up") ? " up" : " down"));
+    if (arrowElement.classList.contains('up')) {
+        arrowElement.innerHTML = "<i class='fa fa-angle-up'></i>"
+    } else {
+        arrowElement.innerHTML = "<i class='fa fa-angle-down'></i>"
+    }
+
 }
 
 
 var Swipes = new Swiper('.swiper-container', {
-    loop: false,
+    loop: true,
     slidesPerView: 'auto',
     navigation: {
         nextEl: '.swiper-button-next',
@@ -43,5 +48,10 @@ var Swipes = new Swiper('.swiper-container', {
     },
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
+    autoplay: {
+        delay: 3000,
+
+    }
 });
