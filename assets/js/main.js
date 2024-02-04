@@ -36,6 +36,7 @@ function toggleFaq(faqId) {
 
 var Swipes = new Swiper('.swiper-container', {
     loop: false,
+    slidesPerView: 'auto',
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
